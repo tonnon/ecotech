@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos do Lixo Eletrônico | EcoTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    EcoTech
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="impactos.html" class="active">Impactos</a></li>
+                    <li><a href="comodescartar.html">Como Descartar</a></li>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="relative pt-28 pb-20 bg-gradient-dark text-white">
+            <div class="absolute inset-0 z-0 opacity-30 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b" alt="Lixo eletrônico" class="w-full h-full object-cover">
+            </div>
+            <div class="container relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl font-bold mb-6">Problemas Causados Pelo Lixo Eletrônico</h1>
+                    <p class="text-xl opacity-80">
+                        Conheça os impactos ambientais e sociais causados pelo descarte inadequado de resíduos eletrônicos 
+                        e por que devemos agir agora.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Cards -->
+        <section class="py-20 bg-light">
+            <div class="container">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold mb-6">Os Principais Impactos</h2>
+                    <p class="text-lg text-gray">
+                        O descarte inadequado de resíduos eletrônicos causa diversos problemas ambientais, sociais e de saúde.
+                    </p>
+                </div>
+
+                <div class="impact-grid">
+                    <!-- Water Pollution Card -->
+                    <div class="impact-card">
+                        <div class="impact-card-header">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                <path d="M8 12l2 2 4-4"/>
+                            </svg>
+                            <h3>Poluição da Água</h3>
+                        </div>
+                        <div class="impact-card-content">
+                            <p>Metais pesados contaminam lençóis freáticos e fontes de água potável.</p>
+                            <ul>
+                                <li>Contaminação de rios e lagos</li>
+                                <li>Afeta a vida aquática</li>
+                                <li>Compromete água potável</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Health Risks Card -->
+                    <div class="impact-card">
+                        <div class="impact-card-header danger">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                <path d="M12 8v4M12 16h.01"/>
+                            </svg>
+                            <h3>Riscos à Saúde</h3>
+                        </div>
+                        <div class="impact-card-content">
+                            <p>Exposição a substâncias tóxicas causa graves problemas de saúde.</p>
+                            <ul>
+                                <li>Problemas respiratórios</li>
+                                <li>Danos neurológicos</li>
+                                <li>Riscos de câncer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Landfill Impact Card -->
+                    <div class="impact-card">
+                        <div class="impact-card-header warning">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6h14z"/>
+                            </svg>
+                            <h3>Impacto em Aterros</h3>
+                        </div>
+                        <div class="impact-card-content">
+                            <p>Sobrecarga dos aterros sanitários com resíduos de difícil decomposição.</p>
+                            <ul>
+                                <li>Ocupação excessiva</li>
+                                <li>Decomposição lenta</li>
+                                <li>Contaminação do solo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="py-20 bg-white">
+            <div class="container">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold mb-6">O Impacto Visual do Lixo Eletrônico</h2>
+                        <p class="text-lg text-gray">
+                            Veja neste vídeo como o descarte inadequado de eletrônicos afeta nosso planeta.
+                        </p>
+                    </div>
+                    
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/Jqmz2K_bysE?controls=1&rel=0" 
+                            title="O Impacto do Lixo Eletrônico"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-6">É Hora de Agir</h2>
+                    <p class="text-lg mb-8">
+                        Conhecendo os impactos, agora é hora de fazer parte da solução.
+                        Descubra onde e como descartar corretamente seus equipamentos eletrônicos.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="comodescartar.html" class="btn btn-white">Como Descartar Corretamente</a>
+                        <a href="solucoes.html" class="btn btn-outline-white">Conheça as Soluções</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        EcoTech
+                    </a>
+                    <p>Transformando o futuro através do descarte consciente de eletrônicos.</p>
+                </div>
+                <div>
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="impactos.html">Impactos</a></li>
+                        <li><a href="comodescartar.html">Como Descartar</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>contato@ecotech.com.br</li>
+                        <li>(11) 9999-9999</li>
+                        <li>São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoTech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

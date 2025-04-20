@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções | EcoTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    EcoTech
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="impactos.html">Impactos</a></li>
+                    <li><a href="comodescartar.html">Como Descartar</a></li>
+                    <li><a href="solucoes.html" class="active">Soluções</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="hero-section"></div>
+        <div id="solutions-grid"></div>
+        <div id="innovation-timeline"></div>
+        <div id="cta-section"></div>
+        <div id="recycling-apps">
+          <section class="py-20 bg-apps">
+            <div class="container">
+              <h2 class="text-3xl font-bold mb-12 text-center apps-title">Aplicativos para Reciclagem Eletrônica</h2>
+              <div class="apps-grid">
+                <!-- Green Eletron -->
+                <div class="app-card">
+                  <img src="https://www.greeneletron.org.br/blog/wp-content/uploads/2021/07/app-1024x576.png" alt="Green Eletron App" class="app-image" />
+                  <h3 class="app-name">Green Eletron</h3>
+                  <p class="app-description">Aplicativo oficial da Green Eletron que permite localizar pontos de coleta de resíduos eletrônicos em todo o Brasil. Com mais de 3.000 pontos cadastrados, facilita o descarte correto de equipamentos.</p>
+                  <ul class="app-features">
+                    <li>✓ Localização de pontos de coleta</li>
+                    <li>✓ Informações sobre descarte correto</li>
+                    <li>✓ Certificado de descarte</li>
+                  </ul>
+                  <div class="app-links">
+                    <a href="https://play.google.com/store/apps/details?id=br.org.greeneletron.app" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-primary">Google Play</a>
+                    <a href="https://apps.apple.com/br/app/green-eletron/id1562267453" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-outline">App Store</a>
+                  </div>
+                </div>
+                <!-- Cataki -->
+                <div class="app-card">
+                  <img src="https://play-lh.googleusercontent.com/dcJ7LnFZnF_KGPNp1OvS_F4Qpon8FK8AzbWCpQy8ww_Wm5OAh6HWXvFyMebE1sQKTE4=w526-h296-rw" alt="Cataki App" class="app-image" />
+                  <h3 class="app-name">Cataki</h3>
+                  <p class="app-description">O Cataki conecta pessoas que querem descartar resíduos, incluindo eletrônicos, a catadores cadastrados. Com mais de 3.000 catadores em todo o Brasil, o app promove o descarte consciente e gera renda para os catadores.</p>
+                  <ul class="app-features">
+                    <li>✓ Localização de catadores próximos</li>
+                    <li>✓ Chat direto com catadores</li>
+                    <li>✓ Sistema de avaliação</li>
+                  </ul>
+                  <div class="app-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.cataki" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-primary">Google Play</a>
+                    <a href="https://apps.apple.com/br/app/cataki/id1351195764" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-outline">App Store</a>
+                  </div>
+                </div>
+                <!-- ER Coleta -->
+                <div class="app-card">
+                  <img src="https://erassistencia.com.br/wp-content/uploads/2021/03/er-assistencia-tecnica-especializada-app.jpg" alt="ER Coleta App" class="app-image" />
+                  <h3 class="app-name">ER Coleta</h3>
+                  <p class="app-description">Aplicativo da ER Assistência Técnica focado na coleta de resíduos eletrônicos em São Paulo. Oferece serviço de coleta domiciliar e empresarial de equipamentos eletrônicos.</p>
+                  <ul class="app-features">
+                    <li>✓ Agendamento de coletas</li>
+                    <li>✓ Coleta em domicílio</li>
+                    <li>✓ Certificado de destinação</li>
+                  </ul>
+                  <div class="app-links">
+                    <a href="https://play.google.com/store/apps/details?id=br.com.erassistencia.coleta" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-primary">Google Play</a>
+                  </div>
+                </div>
+                <!-- Cicla Brasil -->
+                <div class="app-card">
+                  <img src="https://res.cloudinary.com/dr8h9e1vb/image/upload/v1602796091/cicla_brasil_app_reciclagem.jpg" alt="Cicla Brasil App" class="app-image" />
+                  <h3 class="app-name">Cicla Brasil</h3>
+                  <p class="app-description">Plataforma que mapeia pontos de coleta de diversos tipos de resíduos, incluindo eletrônicos. O app permite encontrar locais de descarte adequado em várias cidades brasileiras.</p>
+                  <ul class="app-features">
+                    <li>✓ Mapa de pontos de coleta</li>
+                    <li>✓ Informações educativas</li>
+                    <li>✓ Programa de recompensas</li>
+                  </ul>
+                  <div class="app-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.ciclabrasil" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-primary">Google Play</a>
+                    <a href="https://apps.apple.com/br/app/cicla-brasil/id1535012847" target="_blank" rel="noopener noreferrer" class="app-btn app-btn-outline">App Store</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- NOVAS SEÇÕES PERTINENTES AO CONTEXTO DO PROJETO -->
+
+        <!-- Iniciativas Governamentais sobre Reciclagem de E-lixo -->
+        <section class="py-20 bg-public">
+          <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-10 section-title">Iniciativas Governamentais</h2>
+            <div class="gov-grid">
+              <div class="gov-card">
+                <h3 class="gov-title">Política Nacional de Resíduos Sólidos (PNRS)</h3>
+                <p>A PNRS institui a responsabilidade compartilhada sobre resíduos, incluindo eletrônicos. Empresas devem garantir a logística reversa desses produtos e o cidadão acesso a locais de descarte seguro.</p>
+                <a href="https://www.gov.br/mma/pt-br/assuntos/gestao-ambiental/parcerias-e-instituicoes/gestao-de-residuos/politica-nacional-de-residuos-solidos" target="_blank" class="gov-link">Saiba mais</a>
+              </div>
+              <div class="gov-card">
+                <h3 class="gov-title">Programa Digitaliza Brasil</h3>
+                <p>Iniciativa do Governo Federal que incentiva o destino correto de TVs, celulares e equipamentos de rádio ao substituir tecnologia analógica pela digital.</p>
+                <a href="https://www.gov.br/mcom/pt-br/assuntos/digitaliza-brasil" target="_blank" class="gov-link">Saiba mais</a>
+              </div>
+              <div class="gov-card">
+                <h3 class="gov-title">Parcerias Municipais</h3>
+                <p>Prefeituras de diversas cidades do Brasil promovem “mutirões” de coleta de e-lixo e ações educativas de descarte nos bairros e escolas.</p>
+                <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/meio_ambiente/programas/recicla_sampa/" target="_blank" class="gov-link">Exemplo SP</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Empresas Parceiras e Certificadas -->
+        <section class="py-20 bg-partners">
+          <div class="container">
+            <h2 class="text-3xl font-bold mb-10 text-center section-title">Empresas Parceiras Certificadas</h2>
+            <div class="partners-grid">
+              <div class="partner-card">
+                <img src="https://www.greeneletron.org.br/wp-content/uploads/2020/07/logo-green-eletron.png" alt="Parceiro Green Eletron" class="partner-logo" />
+                <div>
+                  <h3>Green Eletron</h3>
+                  <p>Gestora nacional especializada na destinação de eletroeletrônicos, pilhas e baterias com certificação ambiental.</p>
+                  <a href="https://www.greeneletron.org.br/" target="_blank" class="partner-link">Ver site</a>
+                </div>
+              </div>
+              <div class="partner-card">
+                <img src="https://www.ecoleoambiental.com.br/wp-content/uploads/2022/04/Logo-EcoLeo-PNG.png" alt="Parceiro EcoLeo Ambiental" class="partner-logo" />
+                <div>
+                  <h3>EcoLeo Ambiental</h3>
+                  <p>Empresa brasileira referência em gestão de resíduos eletrônicos que oferece coleta corporativa, destruição segura e reciclagem.</p>
+                  <a href="https://www.ecoleoambiental.com.br/" target="_blank" class="partner-link">Ver site</a>
+                </div>
+              </div>
+              <div class="partner-card">
+                <img src="https://reciclare.org.br/wp-content/uploads/2023/05/reciclare-logo.png" alt="Parceiro Reciclare" class="partner-logo" />
+                <div>
+                  <h3>Reciclare</h3>
+                  <p>ONG focada em educação ambiental, coleta e reutilização de eletrônicos para inclusão digital social.</p>
+                  <a href="https://reciclare.org.br/" target="_blank" class="partner-link">Ver site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dicas Fáceis para o Consumidor -->
+        <section class="py-20 bg-tips">
+          <div class="container">
+            <h2 class="text-3xl font-bold mb-10 text-center section-title">Dicas Simples para Você</h2>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <h3 class="tip-title">Doe antes de descartar</h3>
+                <p>Equipamentos em funcionamento ou que podem ser consertados são valiosos para ONGs ou escolas.</p>
+              </div>
+              <div class="tip-card">
+                <h3 class="tip-title">Guarde pilhas e baterias separadamente</h3>
+                <p>Mantenha pilhas usadas em um recipiente seguro até levá-las a um ponto de coleta. Nunca descarte no lixo comum!</p>
+              </div>
+              <div class="tip-card">
+                <h3 class="tip-title">Prefira produtos com selo de logística reversa</h3>
+                <p>Marcas comprometidas facilitam o retorno do equipamento ao fabricante quando chega ao fim da vida útil.</p>
+              </div>
+              <div class="tip-card">
+                <h3 class="tip-title">Reduza o consumo de eletrônicos</h3>
+                <p>Considere reparos, upgrades e compartilhe equipamentos em vez de comprar sempre novos.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        EcoTech
+                    </a>
+                    <p>Transformando o futuro através do descarte consciente de eletrônicos.</p>
+                </div>
+                <div>
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="impactos.html">Impactos</a></li>
+                        <li><a href="comodescartar.html">Como Descartar</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>contato@ecotech.com.br</li>
+                        <li>(11) 9999-9999</li>
+                        <li>São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoTech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Load React components
+        const root = ReactDOM.createRoot(document.getElementById('hero-section'));
+        root.render(React.createElement(HeroSection));
+
+        const solutionsRoot = ReactDOM.createRoot(document.getElementById('solutions-grid'));
+        solutionsRoot.render(React.createElement(SolutionsGrid));
+
+        const timelineRoot = ReactDOM.createRoot(document.getElementById('innovation-timeline'));
+        timelineRoot.render(React.createElement(InnovationTimeline));
+
+        const ctaRoot = ReactDOM.createRoot(document.getElementById('cta-section'));
+        ctaRoot.render(React.createElement(CTASection));
+
+        const appsRoot = ReactDOM.createRoot(document.getElementById('recycling-apps'));
+        appsRoot.render(React.createElement(RecyclingApps));
+    </script>
+
+    <style>
+    /* Estilos exclusivos da seção de Aplicativos de Reciclagem */
+    .bg-apps {
+      background: linear-gradient(109.6deg, #dfeaf7 11.2%, #f4f8fc 91.1%);
+    }
+    .apps-title {
+      color: #1A1F2C;
+      margin-bottom: 3rem;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .app-card {
+      background: #FFFFFF;
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 32px rgba(155,135,245,0.07), 0 1.5px 8px #e5e7eb;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #F1F0FB;
+    }
+
+    .app-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(155,135,245,0.14), 0 3px 16px #e5e7eb;
+    }
+
+    .app-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      background: #F6F6F7;
+      filter: saturate(1.15) brightness(0.98);
+    }
+
+    .app-name {
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #6E59A5;
+      margin-bottom: 0.5rem;
+    }
+
+    .app-description {
+      color: #555;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      min-height: 54px;
+    }
+
+    .app-features {
+      list-style: disc inside;
+      color: #7E69AB;
+      margin-bottom: 1.25rem;
+      padding-left: 0;
+      font-size: 0.97rem;
+    }
+
+    .app-features li {
+      margin-bottom: 0.2rem;
+    }
+
+    .app-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: auto;
+    }
+
+    .app-btn {
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.21s, color 0.21s, border-color 0.21s;
+      box-shadow: 0 1px 2px rgba(155,135,245,0.08);
+      outline: none;
+      border: 2px solid transparent;
+    }
+
+    .app-btn-primary {
+      background: linear-gradient(90deg, #9b87f5 0%, #6E59A5 100%);
+      color: #fff;
+      border-color: #9b87f5;
+    }
+
+    .app-btn-primary:hover,
+    .app-btn-primary:focus {
+      background: linear-gradient(90deg, #7E69AB 0%, #1A1F2C 100%);
+      color: #fff;
+    }
+
+    .app-btn-outline {
+      background: #fff;
+      color: #9b87f5;
+      border-color: #9b87f5;
+    }
+
+    .app-btn-outline:hover,
+    .app-btn-outline:focus {
+      background: #9b87f5;
+      color: #fff;
+      border-color: #9b87f5;
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      .apps-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .app-image {
+        height: 140px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .app-card {
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+      .apps-title {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+      }
+      .app-image {
+        height: 96px;
+      }
+    }
+    </style>
+
+<!-- CSS para novas seções -->
+<style>
+/* --- ESTILO NOVAS SEÇÕES --- */
+.bg-public {
+  background: linear-gradient(103deg, #d3e4fd 0%, #f2fce2 100%);
+}
+.bg-partners {
+  background: linear-gradient(97deg, #f4f8fc 0%, #e5deff 100%);
+}
+.bg-tips {
+  background: linear-gradient(109.6deg, #fffecd 11.2%, #e5deff 91.1%);
+}
+
+.section-title {
+  color: #6E59A5;
+  letter-spacing: 0.01em;
+}
+
+.gov-grid, .partners-grid, .tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.gov-card, .tip-card {
+  background: #fff;
+  border: 1px solid #f1f0fb;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 20px rgba(155,135,245,0.06);
+  padding: 2rem;
+  transition: transform 0.19s, box-shadow 0.19s;
+}
+
+.gov-card:hover, .tip-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 32px rgba(155,135,245,0.09);
+}
+
+.gov-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1A1F2C;
+  margin-bottom: 0.5rem;
+}
+
+.gov-link, .partner-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #7E69AB;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.gov-link:hover, .partner-link:hover {
+  color: #1A1F2C;
+}
+
+/* Parceiros */
+.partners-grid {
+  align-items: stretch;
+}
+.partner-card {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #f1f0fb;
+  box-shadow: 0 4px 20px rgba(155,135,245,0.05);
+  transition: box-shadow 0.2s;
+}
+.partner-card:hover {
+  box-shadow: 0 12px 40px rgba(155,135,245,0.10);
+}
+.partner-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  background: #f6f6f7;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px #e5e7eb60;
+  padding: 0.3rem;
+}
+.partner-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6E59A5;
+  margin-bottom: 0.4rem;
+}
+
+/* Dicas consumidor */
+.tips-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.tip-title {
+  color: #7E69AB;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Responsividades extras */
+@media (max-width: 900px) {
+  .gov-grid, .partners-grid, .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .gov-card, .tip-card, .partner-card {
+    padding: 1rem;
+    border-radius: 0.9rem;
+  }
+  .partner-logo { width: 52px; height: 52px; }
+}
+</style>
+</body>
+</html>
