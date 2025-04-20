@@ -41,6 +41,10 @@ body {
     padding: 0 1rem;
 }
 
+.text-white {
+    color: var(--light-text);
+}
+
 /* Navbar Styles */
 .navbar {
     position: fixed;
@@ -317,13 +321,7 @@ section {
     color: var(--gray-text);
 }
 
-/* Impact Section */
-.impact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    align-items: center;
-}
+
 
 .impact-image img {
     width: 100%;
