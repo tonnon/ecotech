@@ -8,10 +8,10 @@
     --border: 214.3 31.8% 91.4%;
     
     /* Custom colors */
-    --primary-color: #1a1f2c;
-    --primary-light: #9b87f5;
-    --secondary-color: #7e69ab;
-    --accent-color: #6e59a5;
+    --primary-color: #43A047;
+    --primary-light: #4C3941;
+    --secondary-color: #111827;
+    --accent-color: #327635;
     --text-color: #333333;
     --light-text: #ffffff;
     --dark-text: #222222;
@@ -49,7 +49,7 @@ body {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 1000; /* Increased z-index to ensure navbar stays on top */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -66,13 +66,12 @@ body {
     gap: 0.5rem;
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--primary-color);
 }
 
 .logo-icon {
-    width: 32px;
-    height: 32px;
-    color: var(--primary-light);
+    width: 34px;
+    height: 34px;
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -90,7 +89,7 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--primary-light);
+    color: var(--primary-color);
 }
 
 .menu-toggle {
@@ -187,7 +186,7 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--primary-light);
+    background-color: var(--primary-color);
     color: var(--light-text);
 }
 
@@ -275,7 +274,7 @@ section {
 
 .section-header p {
     font-size: 1.125rem;
-    color: var(--gray-text);
+    color: var(--dark-text);
 }
 
 /* Cards Grid */
@@ -359,7 +358,15 @@ section {
 
 /* Stats Section */
 .stats-section {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+}
+
+.stats-section h2 {
+    color: var(--light-text);
+}
+
+.stats-section p {
     color: var(--light-text);
 }
 
@@ -373,13 +380,14 @@ section {
     text-align: center;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
 
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-light);
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -402,95 +410,6 @@ section {
     margin-top: 2rem;
     flex-wrap: wrap;
 }
-
-/* Footer */
-.footer {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    padding: 5rem 0 2rem;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    margin-bottom: 3rem;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-links a {
-    color: var(--light-text);
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.social-links a:hover {
-    opacity: 1;
-}
-
-.social-links svg {
-    width: 24px;
-    height: 24px;
-}
-
-.footer h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-}
-
-.footer ul {
-    list-style: none;
-}
-
-.footer ul li {
-    margin-bottom: 0.75rem;
-}
-
-.footer a {
-    color: var(--light-text);
-    text-decoration: none;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.footer a:hover {
-    opacity: 1;
-}
-
-.footer-contact ul li {
-    display: flex;
-    gap: 0.75rem;
-    align-items: flex-start;
-}
-
-.footer-contact svg {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    margin-top: 0.25rem;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 2rem;
-    text-align: center;
-    font-size: 0.875rem;
-    opacity: 0.7;
-}
-
-/* Main Pages Common Styles */
 
 /* Hero Section for Inner Pages */
 .hero-section {
@@ -904,11 +823,12 @@ section {
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
+        z-index: 1001; /* Ensure toggle button stays above navbar */
     }
 
     .nav-links {
         position: fixed;
-        top: 70px;
+        top: -200px;
         left: 0;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.95);
@@ -917,13 +837,12 @@ section {
         padding: 1rem;
         gap: 1rem;
         text-align: center;
-        transform: translateY(-100%);
         transition: transform 0.3s ease;
-        z-index: 999;
+        z-index: -1;
     }
 
     .nav-links.active {
-        transform: translateY(0);
+        transform: translateY(270px);
     }
 
     .hero-content h1 {
@@ -974,7 +893,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--light-text);
     padding: 5rem 0 2rem;
 }

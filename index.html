@@ -1,27 +1,33 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTech - Reciclagem de Lixo Eletrônico</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>EcoTech</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5'/><path d='M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12'/><path d='m14 16-3 3 3 3'/><path d='M8.293 13.596 7.196 9.5 3.1 10.598'/><path d='m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843'/><path d='m13.378 9.633 4.096 1.098 1.097-4.096'/></svg>" type="image/svg+xml">
 </head>
 <body>
     <header class="navbar">
         <div class="container">
             <nav>
                 <div class="logo">
-                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"></path>
-                        <path d="m6 13 4-4 4 4 4-4"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-recycle-icon lucide-recycle">
+                        <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"/>
+                        <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"/>
+                        <path d="m14 16-3 3 3 3"/><path d="M8.293 13.596 7.196 9.5 3.1 10.598"/>
+                        <path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843"/>
+                        <path d="m13.378 9.633 4.096 1.098 1.097-4.096"/>
                     </svg>
                     <span>EcoTech</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="impactos.html">Impactos</a></li>
-                    <li><a href="comodescartar.html">Como Descartar</a></li>
-                    <li><a href="solucoes.html">Soluções</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="pages/impactos.html">Impactos</a></li>
+                    <li><a href="pages/comodescartar.html">Como Descartar</a></li>
+                    <li><a href="pages/solucoes.html">Soluções</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
                 </ul>
                 <button class="menu-toggle" aria-label="Toggle menu">
                     <span></span>
@@ -33,22 +39,19 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-video">
-                <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1550376026-33cbee780def">
-                    <source src="https://player.vimeo.com/external/517069880.hd.mp4?s=55ae8ef199c40b489818b43155fe6d7e8739580d&profile_id=175&oauth2_token_id=57447761" type="video/mp4">
-                    Your browser does not support the video tag.
+                <video autoplay muted loop playsinline>
+                    <source src="./assets/video.mp4" type="video/mp4">
                 </video>
                 <div class="overlay"></div>
             </div>
             <div class="container">
                 <div class="hero-content animate-fade-in">
-                    <h1>O Futuro do Planeta Depende da Sua Escolha: Recicle Seu Lixo Eletrônico!</h1>
+                    <h1>O futuro do planeta depende da sua escolha: recicle seu lixo eletrônico!</h1>
                     <p>Transforme o destino dos equipamentos eletrônicos e ajude a preservar o meio ambiente para as futuras gerações.</p>
                     <div class="hero-buttons">
-                        <a href="#content" class="btn btn-primary">Saiba Mais</a>
-                        <a href="comodescartar.html" class="btn btn-outline">Como Descartar</a>
+                        <a href="pages/comodescartar.html" class="btn btn-primary">Como descartar</a>
                     </div>
                 </div>
                 <button class="scroll-down" aria-label="Scroll down">
@@ -59,17 +62,14 @@
             </div>
         </section>
 
-        <!-- What is E-Waste Section -->
         <section id="content" class="ewaste-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <h2>O Que É Lixo Eletrônico?</h2>
-                    <p>Lixo eletrônico, ou e-waste, refere-se a equipamentos eletrônicos e elétricos descartados que chegaram ao fim de sua vida útil. 
+                    <h2>O que é lixo eletrônico?</h2>
+                    <p>Lixo eletrônico, ou e-waste, refere-se a equipamentos eletrônicos descartados que chegaram ao fim de sua vida útil. 
                     Esses materiais contêm substâncias tóxicas que, quando descartados incorretamente, representam sérios riscos ao meio ambiente e à saúde humana.</p>
                 </div>
-                
                 <div class="cards-grid">
-                    <!-- Card 1 -->
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -80,8 +80,6 @@
                         <h3>Celulares</h3>
                         <p>Smartphones, celulares antigos e tablets contêm metais pesados como chumbo, mercúrio e cádmio que são altamente tóxicos.</p>
                     </div>
-                    
-                    <!-- Card 2 -->
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -92,8 +90,6 @@
                         <h3>Baterias</h3>
                         <p>Baterias de diversos dispositivos contêm elementos químicos que podem contaminar o solo e a água quando descartados incorretamente.</p>
                     </div>
-                    
-                    <!-- Card 3 -->
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -112,8 +108,6 @@
                         <h3>Computadores</h3>
                         <p>Desktops, notebooks e seus componentes contêm diversos metais e materiais que podem ser reciclados e reutilizados.</p>
                     </div>
-                    
-                    <!-- Card 4 -->
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -131,12 +125,11 @@
             </div>
         </section>
 
-        <!-- Environmental Impact Section -->
         <section class="impact-section">
             <div class="container">
                 <div class="impact-grid">
                     <div class="impact-image animate-on-scroll">
-                        <img src="https://images.unsplash.com/photo-1610478920392-95888fc10261" alt="Lixo eletrônico impactando o meio ambiente">
+                        <img src="assets/img_1.png" alt="Lixo eletrônico impactando o meio ambiente">
                     </div>
                     <div class="impact-content animate-on-scroll">
                         <h2>Por que o lixo eletrônico é perigoso?</h2>
@@ -165,20 +158,18 @@
                                 </div>
                             </li>
                         </ul>
-                        <a href="impactos.html" class="btn btn-primary">Saiba mais sobre os impactos</a>
+                        <a href="pages/impactos.html" class="btn btn-primary">Saiba mais sobre os impactos</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Statistics Section -->
+        
         <section class="stats-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <h2>O Impacto em Números</h2>
+                    <h2>O impacto em números</h2>
                     <p>A produção de lixo eletrônico cresce rapidamente, e apenas uma pequena parte é reciclada adequadamente.</p>
                 </div>
-                
                 <div class="stats-grid">
                     <div class="stat-card animate-on-scroll">
                         <div class="stat-number">57.4M</div>
@@ -200,16 +191,15 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content animate-on-scroll">
-                    <h2>Faça a Diferença Agora</h2>
+                    <h2>Faça a diferença agora</h2>
                     <p>O descarte correto de lixo eletrônico é responsabilidade de todos. 
                     Conheça os pontos de coleta mais próximos de você e saiba como descartar seus dispositivos eletrônicos.</p>
                     <div class="cta-buttons">
-                        <a href="comodescartar.html" class="btn btn-white">Pontos de Coleta</a>
-                        <a href="solucoes.html" class="btn btn-outline-white">Conheça as Soluções</a>
+                        <a href="pages/comodescartar.html" class="btn btn-white">Pontos de coleta</a>
+                        <a href="pages/solucoes.html" class="btn btn-outline-white">Conheça as soluções</a>
                     </div>
                 </div>
             </div>
@@ -219,12 +209,14 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Logo and description -->
                 <div class="footer-info">
                     <div class="footer-logo">
-                        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"></path>
-                            <path d="m6 13 4-4 4 4 4-4"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-recycle-icon lucide-recycle">
+                            <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"/>
+                            <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"/>
+                            <path d="m14 16-3 3 3 3"/><path d="M8.293 13.596 7.196 9.5 3.1 10.598"/>
+                            <path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843"/>
+                            <path d="m13.378 9.633 4.096 1.098 1.097-4.096"/>
                         </svg>
                         <span>EcoTech</span>
                     </div>
@@ -236,20 +228,16 @@
                         <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
                     </div>
                 </div>
-
-                <!-- Quick Links -->
                 <div class="footer-links">
                     <h3>Links Rápidos</h3>
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="impactos.html">Impactos</a></li>
-                        <li><a href="comodescartar.html">Como Descartar</a></li>
-                        <li><a href="solucoes.html">Soluções</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="pages/impactos.html">Impactos</a></li>
+                        <li><a href="pages/comodescartar.html">Como Descartar</a></li>
+                        <li><a href="pages/solucoes.html">Soluções</a></li>
+                        <li><a href="pages/sobre.html">Sobre</a></li>
                     </ul>
                 </div>
-
-                <!-- Resources -->
                 <div class="footer-resources">
                     <h3>Recursos</h3>
                     <ul>
@@ -260,8 +248,6 @@
                         <li><a href="#">Parcerias</a></li>
                     </ul>
                 </div>
-
-                <!-- Contact -->
                 <div class="footer-contact">
                     <h3>Contato</h3>
                     <ul>
@@ -270,13 +256,13 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <span>Av. Paulista, 1000<br>São Paulo - SP, Brasil</span>
+                            <span>Av. Ana Costa, 1000<br>Santos - SP, Brasil</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
-                            <span>(11) 0000-0000</span>
+                            <span>(13) 0101-0101</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -290,43 +276,11 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 EcoTech. Todos os direitos reservados.</p>
+                <p>&copy; <span id="copyright-year">2025</span> EcoTech. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script>
-        // Menu toggle functionality
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-
-        // Smooth scroll functionality
-        document.querySelector('.scroll-down').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector('#content').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-on-scroll').forEach((element) => {
-            observer.observe(element);
-        });
-    </script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
