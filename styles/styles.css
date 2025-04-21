@@ -200,7 +200,7 @@ body {
 
 .btn-outline {
     background-color: transparent;
-    border: 2px solid var(--primary-light);
+    border: 2px solid var(--primary-color);
     color: var(--primary-light);
 }
 
@@ -321,8 +321,6 @@ section {
     color: var(--gray-text);
 }
 
-
-
 .impact-image img {
     width: 100%;
     height: auto;
@@ -424,6 +422,10 @@ section {
 
 .text-gray {
     color: var(--gray-text);
+}
+
+.text-green {
+    color: var(--primary-color);
 }
 
 .max-w-3xl {
@@ -688,6 +690,257 @@ section {
 }
 
 /* Solutions Page */
+ /* Estilos exclusivos da seção de Aplicativos de Reciclagem */
+ .bg-apps {
+    background: linear-gradient(109.6deg, #dfeaf7 11.2%, #f4f8fc 91.1%);
+  }
+  .apps-title {
+    color: var(--dark-text);
+    margin: 5rem 0;
+    color: var(--primary-color);
+  }
+
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .app-card {
+    background: #FFFFFF;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 32px rgba(155,135,245,0.07), 0 1.5px 8px #e5e7eb;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #F1F0FB;
+  }
+
+  .app-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(155,135,245,0.14), 0 3px 16px #e5e7eb;
+  }
+
+  .app-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background: #F6F6F7;
+    filter: saturate(1.15) brightness(0.98);
+  }
+
+  .app-name {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #6E59A5;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-description {
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    min-height: 54px;
+  }
+
+  .app-features {
+    list-style: disc inside;
+    color: #7E69AB;
+    margin-bottom: 1.25rem;
+    padding-left: 0;
+    font-size: 0.97rem;
+  }
+
+  .app-features li {
+    margin-bottom: 0.2rem;
+  }
+
+  .app-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+  }
+
+  .app-btn {
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.21s, color 0.21s, border-color 0.21s;
+    box-shadow: 0 1px 2px rgba(155,135,245,0.08);
+    outline: none;
+    border: 2px solid transparent;
+  }
+
+  .app-btn-primary {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: #fff;
+  }
+
+  .app-btn-primary:hover,
+  .app-btn-primary:focus {
+    background: linear-gradient(90deg, #7E69AB 0%, #1A1F2C 100%);
+    color: #fff;
+  }
+
+  .app-btn-outline {
+    background: #fff;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .app-btn-outline:hover,
+  .app-btn-outline:focus {
+    background: var(--primary-color);
+    color: #fff;
+  }
+
+  /* Responsividade */
+  @media (max-width: 900px) {
+    .apps-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .app-image {
+      height: 140px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .app-card {
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+    .apps-title {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .app-image {
+      height: 96px;
+    }
+  }
+
+  .bg-public {
+    background: linear-gradient(103deg, #d3e4fd 0%, #f2fce2 100%);
+  }
+  .bg-partners {
+    background: linear-gradient(109.6deg, #dfeaf7 11.2%, #f4f8fc 91.1%);
+  }
+  .bg-tips {
+    background: linear-gradient(103deg, #d3e4fd 0%, #f2fce2 100%);
+  }
+  
+  .section-title {
+    color: var(--primary-color);
+    letter-spacing: 0.01em;
+    margin-bottom: 5rem;
+  }
+  
+  .gov-grid, .partners-grid, .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .gov-card, .tip-card {
+    background: #fff;
+    border: 1px solid #f1f0fb;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 20px rgba(155,135,245,0.06);
+    padding: 2rem;
+    transition: transform 0.19s, box-shadow 0.19s;
+  }
+  
+  .gov-card:hover, .tip-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 32px rgba(155,135,245,0.09);
+  }
+  
+  .gov-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7E69AB;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gov-link, .partner-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #7E69AB;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  .gov-link:hover, .partner-link:hover {
+    color: #1A1F2C;
+  }
+  
+  /* Parceiros */
+  .partners-grid {
+    align-items: stretch;
+  }
+  .partner-card {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: #fff;
+    border: 1px solid #f1f0fb;
+    box-shadow: 0 4px 20px rgba(155,135,245,0.05);
+    transition: box-shadow 0.2s;
+  }
+  .partner-card:hover {
+    box-shadow: 0 12px 40px rgba(155,135,245,0.10);
+  }
+  .partner-logo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    background: #f6f6f7;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 8px #e5e7eb60;
+    padding: 0.3rem;
+  }
+  .partner-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6E59A5;
+    margin-bottom: 0.4rem;
+  }
+  
+  /* Dicas consumidor */
+  .tips-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .tip-title {
+    color: #7E69AB;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Responsividades extras */
+  @media (max-width: 900px) {
+    .gov-grid, .partners-grid, .tips-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .gov-card, .tip-card, .partner-card {
+      padding: 1rem;
+      border-radius: 0.9rem;
+    }
+    .partner-logo { width: 52px; height: 52px; }
+  }
+
 .solutions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
